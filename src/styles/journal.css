@@ -1,34 +1,18 @@
+/* Background Image */
 html {
     background: url(../images/dog-paws.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
+/* Element Tags */
 body {
     font-family: Roboto, sans-serif;
-}
-
-.container {
-    margin: 10% auto;
 }
 
 form {
     display: flex;
     flex-direction: column;
     margin: 10% 20%;
-}
-
-.transparent-bg, .journalDisplay {
-    background-color: rgba(241, 233, 233, 0.6);
-    border-radius: 2%;
-}
-
-.shadow-bottom {
-    box-shadow: 0 8px 6px -6px black;
-}
-
-h1 {
-    font-size: 2em;
-    text-align: center;
 }
 
 fieldset {
@@ -44,12 +28,15 @@ fieldset textarea {
     width: 60%;
     margin: .5em auto;
 }
-.submit-btn {
-    box-sizing: content-box;
-    align-self: center;
-    margin: 10% 0 0 0;
+
+h1 {
     font-size: 2em;
-    padding: 1em;
+    text-align: center;
+}
+
+hr {
+    width: 95%;
+    margin-bottom: 25px;
 }
 
 footer {
@@ -59,8 +46,44 @@ footer {
     padding-bottom: 1em;
 }
 
+/* Class Attributes */
+.container {
+    margin: 10% auto;
+}
+
+
+.transparent-bg, .journal-entry {
+    background-color: rgba(241, 233, 233, 0.6);
+    border-radius: 2%;
+}
+
+.shadow-bottom {
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.submit-btn {
+    box-sizing: content-box;
+    align-self: center;
+    margin: 10% 0 0 0;
+    font-size: 2em;
+    padding: 1em;
+}
+
 .journalDisplay {
     margin: 0 5%;
-    padding: 25px 0;
     text-align: center;
+}
+
+.journal-entry {
+    margin-bottom: 25px;
+    padding: 1em;
+}
+
+.journal-entry-body {
+    text-align: left;
+    text-indent: 2em;
+}
+
+.journal-entry-date {
+    font-size: .8em;
 }
