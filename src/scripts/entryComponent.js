@@ -1,5 +1,7 @@
 // console.log('entryComponent.js')
 
+
+
 const create = {
     // Create component
     makeJournalEntryComponent(entry) {
@@ -12,7 +14,7 @@ const create = {
     <p class="journal-entry-date">(${entry.date})</p>
     `
 
-    return journalComponent;
+        return journalComponent;
     }
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,46 +11,28 @@
     <!-- my styles -->
     <link rel="stylesheet" href="styles/journal.css">
 </head>
+
 <body>
     <div class="container">
-        
-        <form action="">
-            <div class="transparent-bg shadow-bottom">
-                <h1>Daily Journal</h1>
-                <hr>
-                <fieldset>
-                    <label for="journalDate">Date Of Entry</label>
-                    <input type="date" name="journalDate" id="journalDate">
-                </fieldset>
-                <fieldset>
-                    <label for="conceptsCovered">Concepts Covered</label>
-                    <input type="text" name="conceptsCovered" id="conceptsCovered">
-                </fieldset>
-                <fieldset>
-                    <label for="journalEntry">Journal Entry</label>
-                    <textarea name="journalEntry" id="journalEntry" cols="30" rows="4"></textarea>
-                </fieldset>
-                <fieldset>
-                    <label for="Mood For The Day">
-                        <select name="moodSelect" id="moodSelect">
-                            <option value="happy">Happy</option>
-                            <option value="sad">Sad</option>
-                            <option value="needCoffee">Need Coffee</option>
-                        </select>
-                    </label>
-                </fieldset>
-            </div>
-            <input class="submit-btn shadow-bottom" type="submit" value="Record Journal Entry">       
-        </form>
-        <article class="journalDisplay shadow-bottom"></article>
+        <!-- Form display-->
+        <div id="form-container"></div>
+
+        <!-- Filter mood display-->
+        <div id="mood-filter-container" class="transparent-bg shadow-bottom"></div>
+        <hr class="divide">
+
+        <!--  Journal entries display here -->
+        <article class="journal-display shadow-bottom"></article>
     </div>
     <footer>
         <p>&copy;Jason Technology 2019</p>
     </footer>
 
+    <script src="scripts/formDOM.js"></script>
     <script src="scripts/data.js"></script> <!-- Fetch -->
     <script src="scripts/entryComponent.js"></script> <!-- Create component -->
     <script src="scripts/entriesDOM.js"></script> <!-- Render to DOM -->
     <script src="scripts/main.js"></script> <!-- Main javascript-->
 </body>
+
 </html>

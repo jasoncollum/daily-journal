@@ -46,22 +46,8 @@ footer {
     padding-bottom: 1em;
 }
 
-/* Class Attributes */
-.container {
-    margin: 10% auto;
-}
-
-
-.transparent-bg, .journal-entry {
-    background-color: rgba(241, 233, 233, 0.6);
-    border-radius: 2%;
-}
-
-.shadow-bottom {
-    box-shadow: 0 8px 6px -6px black;
-}
-
-.submit-btn {
+/* Id Attributes */
+#journal-submit-btn {
     box-sizing: content-box;
     align-self: center;
     margin: 10% 0 0 0;
@@ -69,7 +55,56 @@ footer {
     padding: 1em;
 }
 
-.journalDisplay {
+#mood-filter-container {
+    padding: 5px 0 15px 0;
+    margin: 5% 20%;
+    text-align: center;
+    border-radius: 2%;
+    background-color: rgba(241, 233, 233, 0.85);
+}
+
+#mood-filter-container p {
+    font-size: .8em;
+}
+
+/* Class Attributes */
+.container {
+    margin: 10% auto;
+}
+
+.input-message-div,
+.incomplete-message-div {
+    text-align: center;
+    font-size: 0.8em;
+    color: red;
+}
+
+.transparent-bg, .journal-entry {
+    background-color: rgba(241, 233, 233, 0.6);
+    border-radius: 2%;
+}
+
+.transparent-bg:hover,
+.journal-entry:hover {
+    background-color: rgba(241, 233, 233, 0.85);
+}
+
+.divide {
+    width: 75%;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.shadow-bottom {
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.journal-form {
+    background-color: rgba(241, 233, 233, 0.85);
+    border-radius: 2%;
+}
+
+.journal-display {
     margin: 0 5%;
     text-align: center;
 }
@@ -86,4 +121,9 @@ footer {
 
 .journal-entry-date {
     font-size: .8em;
+}
+
+.mood-radio {
+    display: inline-block;
+    
 }

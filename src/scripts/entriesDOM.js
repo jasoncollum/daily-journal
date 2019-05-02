@@ -1,10 +1,11 @@
 // console.log('entriesDOM.js');
 
-const journalDisplay = document.querySelector('.journalDisplay');
+const journalDisplay = document.querySelector('.journal-display');
 
 // Render to DOM
 const render = {
     renderJournal(entries) {
+        journalDisplay.innerHTML = '';
         entries.forEach((entry) => {
             const journalComponent = create.makeJournalEntryComponent(entry);
             const entryEl = document.createElement('div');
@@ -12,5 +13,11 @@ const render = {
             entryEl.innerHTML = journalComponent;
             journalDisplay.appendChild(entryEl);
         });
+    },
+    renderFilteredEntries(entries, mood) {
+        journalDisplay.innerHTML = '';
+        const filteredEntries = entries.filter(entry => entry.mood === mood);
+        render.renderJournal(filteredEntries);
     }
 }
+
