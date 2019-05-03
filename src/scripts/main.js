@@ -60,24 +60,23 @@ formContainer.addEventListener('click', (e) => {
     }
 })
 
-// Random challenge exercise...
-// function countVowels(str) {
-//     const stringArr = str.toLowerCase().split('');
-//     const vowels = ['a', 'e', 'i', 'o', 'u'];
-//     const filteredVowels = stringArr.filter(letter => vowels.includes(letter));
-//     console.log(filteredVowels.length)
-//     const letterY = stringArr.filter(letter => letter === 'y');
-//     if (letterY.length !== 0) {
-//         const sometimesY = `There are ${filteredVowels.length + letterY.length} vowels if you include Y`;
-//         console.log(sometimesY);
-//     }
-// }
+journalDisplay.addEventListener('click', (e) => {
+    console.log(e)
+    const targetArray = e.target.id.split('--');
+    const targetName = targetArray[0];
+    const targetId = targetArray[1];
 
+    // If delete button
+    if (targetName === 'delete') {
+        API.deleteJournalEntry(targetId)
+            .then(response => {
+                API.getJournalEntries()
+                    .then(entries => render.renderJournal(entries));
+            })
+    }
 
-// countVowels('A dog named Sydney')
-
-// function matchVowels(string) {
-//     console.log(string.match(/[aeiou]/gi))
-// }
-
-// matchVowels('A dog named Sydney')
+    // If edit button
+    if (targetName === 'edit') {
+        // API.editJournalEntry(targetId)
+    }
+})

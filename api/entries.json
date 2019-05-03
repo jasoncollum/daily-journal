@@ -13,34 +13,6 @@
       "date": "2019-04-29",
       "mood": "need coffee",
       "id": 2
-    },
-    {
-      "title": "Render form to DOM via JavaScript",
-      "body": "Exploring building the journal form in javascript then rendering to DOM as needed.",
-      "date": "2019-04-30",
-      "mood": "sad",
-      "id": 3
-    },
-    {
-      "title": "Return data from saveJournalEntry",
-      "body": "added return to the API save method",
-      "date": "2019-04-30",
-      "mood": "need coffee",
-      "id": 4
-    },
-    {
-      "title": "Radio buttons",
-      "body": "Added functionality via radio buttons and filter method",
-      "date": "2019-05-02",
-      "mood": "happy",
-      "id": 5
-    },
-    {
-      "title": "Fixing radio bug",
-      "body": "duplicating mood buttons upon save",
-      "date": "2019-05-02",
-      "mood": "happy",
-      "id": 6
     }
   ]
 }

@@ -9,6 +9,7 @@ const render = {
         entries.forEach((entry) => {
             const journalComponent = create.makeJournalEntryComponent(entry);
             const entryEl = document.createElement('div');
+            entryEl.setAttribute('id', 'journal-entry--${entry.id}')
             entryEl.className = 'journal-entry shadow-bottom';
             entryEl.innerHTML = journalComponent;
             journalDisplay.appendChild(entryEl);
