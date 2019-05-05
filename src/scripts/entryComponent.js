@@ -1,7 +1,5 @@
 // console.log('entryComponent.js')
 
-
-
 const create = {
     // Create component
     makeJournalEntryComponent(entry) {

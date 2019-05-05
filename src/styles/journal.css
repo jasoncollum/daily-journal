@@ -47,7 +47,8 @@ footer {
 }
 
 /* Id Attributes */
-#journal-submit-btn {
+#submit-btn,
+#update-btn {
     box-sizing: content-box;
     align-self: center;
     margin: 10% 0 0 0;
@@ -68,6 +69,10 @@ footer {
 }
 
 /* Class Attributes */
+.hidden {
+    display: none;
+}
+
 .container {
     margin: 10% auto;
 }
@@ -102,6 +107,21 @@ footer {
 .journal-form {
     background-color: rgba(241, 233, 233, 0.85);
     border-radius: 2%;
+}
+
+.journal-edit-form {
+    align-self: center;
+    width: 360px;
+    margin: 0 5%;
+    background-color: rgba(136, 122, 122);
+}
+
+.journal-edit-form textarea {
+    width: 95%;
+}
+
+.journal-edit-form input {
+    width: 100%;
 }
 
 .journal-display {

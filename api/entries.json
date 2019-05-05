@@ -2,17 +2,94 @@
   "entries": [
     {
       "title": "Collecting User Input / Saving to database",
-      "body": "Today I learned that if you have some starter data (that doesn't include an id property) in your database... Result will be a 500 error...",
+      "body": "Today I learned that if you have starter data (that doesn't include an id property) in your database... The result will be a 500 error... New content here.",
       "date": "2019-04-29",
       "mood": "happy",
       "id": 1
     },
     {
-      "title": "Testing to see if multiple entries render",
-      "body": "Here's a placeholder entry...",
-      "date": "2019-04-29",
-      "mood": "need coffee",
+      "title": "May The Fourth Be With You",
+      "body": "Stocking the database with a few more entries.....",
+      "date": "2019-05-04",
+      "mood": "need-coffee",
       "id": 2
+    },
+    {
+      "title": "A Very Sad Entry Indeed",
+      "body": "Sad entries are needed in order to filter by various moods... And this one will find out if the radio buttons reset...",
+      "date": "2019-05-04",
+      "mood": "sad",
+      "id": 3
+    },
+    {
+      "title": "Brand new entry",
+      "body": "Freshy fresh",
+      "date": "2019-05-04",
+      "mood": "happy",
+      "id": 5
+    },
+    {
+      "title": "Need coffee",
+      "body": "or need-coffee?",
+      "date": "2019-05-04",
+      "mood": "need-coffee",
+      "id": 6
+    },
+    {
+      "title": "This should fix our select filter bug",
+      "body": "need-coffee",
+      "date": "2019-05-04",
+      "mood": "=\"need-coffee\"",
+      "id": 9
+    },
+    {
+      "title": "Does this duplicate?",
+      "body": "const new Journal Entry on line 48 of main",
+      "date": "2019-05-04",
+      "mood": "happy",
+      "id": 10
+    },
+    {
+      "title": "Form still works",
+      "body": "Attempting to save a journal",
+      "date": "2019-05-04",
+      "mood": "happy",
+      "id": 11
+    },
+    {
+      "title": "New Entry",
+      "body": "New entry",
+      "date": "2019-05-04",
+      "mood": "happy",
+      "id": 12
+    },
+    {
+      "title": "A new new entry",
+      "body": "works?",
+      "date": "2019-05-04",
+      "mood": "happy",
+      "id": 13
+    },
+    {
+      "title": "newer journal",
+      "body": ";lkja;lkjf",
+      "date": "2019-05-04",
+      "mood": "happy",
+      "id": 14
+    },
+    {
+      "title": "Adding new entry",
+      "body": "To test reset of mood option radios",
+      "date": "2019-05-04",
+      "mood": "happy",
+      "id": 15
+    },
+    {
+      "title": "I need to take a break",
+      "body": ";lkjadf",
+      "date": "2019-05-04",
+      "mood": "happy",
+      "id": 16
     }
   ]
 }
