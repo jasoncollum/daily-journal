@@ -1,14 +1,13 @@
 const formContainer = document.querySelector('#form-container');
 const moodFilterContainer = document.querySelector('#mood-filter-container');
+const searchContainer = document.querySelector('#search-container');
 moodFilterContainer.classList.add('transparent-bg');
 let moodOptions;
 let radios;
 
 const formEl = document.createElement('form');
-const editFormEl = document.createElement('form');
 const moodFilterDiv = document.createElement('div');
 const moodFilterPg = document.createElement('p');
-
 
 // Build and Render FORM
 function renderForm() {
@@ -46,6 +45,7 @@ function renderForm() {
     `
     formContainer.append(formEl);
     renderMoodFilter();
+    renderSearchFieldset();
     radios = document.querySelectorAll('input[type=radio]');
 }
 
@@ -63,11 +63,24 @@ function renderMoodFilter() {
     })
 
     moodFilterContainer.append(moodFilterDiv);
-    return
 }
 
 // Event listener for mood filter section
 moodFilterContainer.addEventListener('change', (e) => {
     API.getJournalEntries()
-        .then(entries => render.renderFilteredEntries(entries, e.target.value))
+        .then(entries => render.filteredEntriesByMood(entries, e.target.value))
 })
+
+// Build and render Search Input
+function renderSearchFieldset() {
+    const searchFieldset = document.createElement('fieldset');
+    searchFieldset.setAttribute('id', 'seach-fieldset');
+    searchFieldset.innerHTML = `
+        <input type="text" id="search-input" placeholder="Enter search term" maxlength="25">
+    `
+    searchContainer.append(searchFieldset);
+}
+
+
+// To Do:
+    // textarea should expand to show entire journal entry when in edit mode *****

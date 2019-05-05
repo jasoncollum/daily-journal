@@ -9,6 +9,7 @@ const journalBody = document.querySelector('#journal-body');
 const mood = document.querySelector('#mood-select');
 const submitBtn = document.querySelector('.submit-btn');
 const hr = document.querySelector('#divider');
+const searchInput = document.querySelector('#search-input');
 const inputMessageDiv = document.querySelector('.input-message-div');
 const incompleteMessageDiv = document.querySelector('.incomplete-message-div');
 
@@ -41,7 +42,7 @@ conceptsCovered.addEventListener('keyup', (e) => {
 
 // Load all journal entries
 API.getJournalEntries()
-    .then(entries => render.renderJournal(entries));
+    .then(entries => render.renderJournals(entries));
 
 // Save journal entry to database
 formContainer.addEventListener('click', (e) => {
@@ -97,7 +98,6 @@ journalDisplay.addEventListener('click', (e) => {
     const targetArray = e.target.id.split('--');
     const targetName = targetArray[0];
     const targetId = targetArray[1];
-    console.log(targetName)
 
     // If edit button
     if (targetName === 'edit') {
@@ -126,7 +126,19 @@ journalDisplay.addEventListener('click', (e) => {
     }
 })
 
+// Listener for search term input
+searchContainer.addEventListener('keypress', (e) => {
+    // console.log(e.charCode)
+    if (e.charCode === 13) {
+        const searchTerm = e.target.value.toLowerCase();
+        searchInput.value = '';
+        API.getJournalEntries()
+            .then(entries => render.filteredEntriesBySearchTerm(entries, searchTerm))
+    }
+})
+
 
 // Test title and entry for curse words ??? *****
 // Add a SHOW ALL ENTRIES button ?
 // Determine when to invoke resetRadios() ***
+

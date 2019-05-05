@@ -1,8 +1,8 @@
 {
   "entries": [
     {
-      "title": "Collecting User Input / Saving to database",
-      "body": "Today I learned that if you have starter data (that doesn't include an id property) in your database... The result will be a 500 error... New content here.",
+      "title": "Collecting User Input and Saving to database",
+      "body": "Today I learned that if you have starter data (that doesn't include an id property) in your database... The result will be a 500 error... ",
       "date": "2019-04-29",
       "mood": "happy",
       "id": 1
@@ -41,55 +41,6 @@
       "date": "2019-05-04",
       "mood": "=\"need-coffee\"",
       "id": 9
-    },
-    {
-      "title": "Does this duplicate?",
-      "body": "const new Journal Entry on line 48 of main",
-      "date": "2019-05-04",
-      "mood": "happy",
-      "id": 10
-    },
-    {
-      "title": "Form still works",
-      "body": "Attempting to save a journal",
-      "date": "2019-05-04",
-      "mood": "happy",
-      "id": 11
-    },
-    {
-      "title": "New Entry",
-      "body": "New entry",
-      "date": "2019-05-04",
-      "mood": "happy",
-      "id": 12
-    },
-    {
-      "title": "A new new entry",
-      "body": "works?",
-      "date": "2019-05-04",
-      "mood": "happy",
-      "id": 13
-    },
-    {
-      "title": "newer journal",
-      "body": ";lkja;lkjf",
-      "date": "2019-05-04",
-      "mood": "happy",
-      "id": 14
-    },
-    {
-      "title": "Adding new entry",
-      "body": "To test reset of mood option radios",
-      "date": "2019-05-04",
-      "mood": "happy",
-      "id": 15
-    },
-    {
-      "title": "I need to take a break",
-      "body": ";lkjadf",
-      "date": "2019-05-04",
-      "mood": "happy",
-      "id": 16
     }
   ]
 }
